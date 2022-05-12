@@ -1,0 +1,81 @@
+body {
+  padding: 10px 10px;
+}
+
+h1 {
+  text-align: center;
+} 
+
+.reduced-paragraph {
+  max-width: 600px;
+  text-align: center;
+  margin: 0 auto 20px;
+}
+
+.current-weather {
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.current-weather__summary {
+  text-align: center;
+}
+
+.featured-weather {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.featured-weather__temp {
+  font-size: 30px;
+}
+
+.current-weather__description {
+  text-transform: capitalize;
+}
+
+.current-weather__indicators {
+  text-align: center;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.weekly-outlook {
+  display: flex;
+  flex-wrap: wrap;
+  margin-top: 20px;
+  justify-content: center;
+}
+
+.daily-panel {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border: 1px solid #aaa;
+  padding: 10px;
+  margin: 10px;
+}
+
+.daily-info {
+  display: flex;
+  justify-content: space-evenly;
+  width: 100%;
+}
+
+.daily-panel__day {
+  margin: 0;
+  padding: 0;
+}
+
+.daily-info__high, .daily-info__low {
+  display: block;
+}
+
+.daily-info__low {
+  color: #999;
+}
