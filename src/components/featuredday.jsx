@@ -20,7 +20,7 @@ export default function WeatherDay(props) {
   return (
     <div className="current-weather">
       <div className="current-weather__summary">
-        <span className="current-weather__time">{day} {hours}:{minutes}</span><br />
+        <span className="current-weather__time">{day}, {hours}:{minutes}</span><br />
         <span className="current-weather__description">{weather.weather[0].description}</span>
       </div>
       <div className="current-weather__icon featured-weather">

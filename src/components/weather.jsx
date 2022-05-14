@@ -28,7 +28,7 @@ export default function WeatherApp() {
       const { current: now, daily: week } = await query.json();
 
       setCurrent(now);
-      setDaily(week.slice(1, 6));
+      setDaily(week.slice(1, 5));
     }
     fetchData();
   }, []);
@@ -39,7 +39,7 @@ export default function WeatherApp() {
 
   return (
     <div>
-      <h1>Weather in Your Area</h1>
+      <h1>Localized Weather App</h1>
       <p className="reduced-paragraph"><i>Asks for your location to get the weather in your area, otherwise defaults to Chicago, Illinois to get the weather outlook. Sadly no chance for precipitation.</i></p>
       <WeatherDay weather={current} />
       <div className="weekly-outlook">
